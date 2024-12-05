@@ -1,0 +1,155 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <title>Lab 05</title>
+    <style>
+        h1 {
+            text-align: center;
+        }
+
+        .form-row {
+            margin: 10px 0px;
+            display: flex;
+            padding: 20px;
+            text-align: center;
+            width: 600px;
+            margin-left: auto;
+            margin-right: auto;
+        }
+
+        .form-col {
+            width: 200px;
+            text-align: center;
+        }
+
+        #submit-btn {
+			background-color: maroon;
+			color: #FFF;
+		}
+
+    </style>
+
+</head>
+
+<body>
+    <h1>Personal Interest Form</h1>
+    <form action="return.html">
+
+        <div class="form-row">
+
+            <div class="form-col">
+                <label for="name-id">Name:</label>
+            </div>
+            <input type="text" id="name-id" placeholder="Tommy Trojan">
+        </div>
+
+        <div class="form-row">
+            <div class="form-col">
+                <label for="email-id">Email:</label>
+            </div>
+            <input type="email" id="email-id" placeholder="ttrojan@usc.edu">
+
+        </div>
+
+        <div class="form-row">
+            <div class="form-col">
+                <label for="phone">Phone Number:</label>
+
+            </div>
+            <input type="text" id="phone" placeholder="(000)-000-0000">
+
+        </div>
+
+
+        <div class="form-row">
+            <div class="form-col">
+                Please select your current identity
+            </div>
+
+            <label>
+                <input type="radio" name="identity">
+                Undergraduate Student
+            </label>
+
+            <label>
+                <input type="radio" name="identity">
+                Graduate Student
+            </label>
+
+            <label>
+                <input type="radio" name="identity">
+                Staff
+            </label>
+        </div>
+
+        <div class="form-row">
+            <div class="form-col">
+                Please select at least one of the food you want for dinner
+            </div>
+            <label>
+                <input type="checkbox">
+                Beef Burger
+            </label>
+
+            <label>
+                <input type="checkbox">
+                Peperoni Pizza
+            </label>
+
+            <label>
+                <input type="checkbox">
+                Fries and Wings
+            </label>
+
+            <label>
+                <input type="checkbox">
+                Turkish Sandwich
+            </label>
+
+            <label>
+                <input type="checkbox">
+                Lemonade
+            </label>
+
+
+        </div>
+
+
+
+        <div class="form-row">
+            <div class="form-col">
+                <label for="subject">
+                    Select the movie you want to watch for dinner
+                </label>
+
+            </div>
+            <select id="subject">
+                <option>Lord of the Ring: The Return of the King</option>
+                <option>Avengers: Endgame</option>
+                <option>One of the Harry Potter series</option>
+                <option>One of the Hobbit series</option>
+            </select>
+
+        </div>
+
+
+
+        <div class="form-row">
+            <div class="form-col">
+                <label for="msg">Message:</label>
+            </div>
+
+            <textarea id="msg" placeholder="Hello..."></textarea>
+        </div>
+
+        <div class="form-row">
+            <button id="submit-btn" type="submit">Send</button>
+            <button type="reset">Reset</button>
+        </div>
+
+
+    </form>
+</body>
+
+</html>

@@ -1,0 +1,91 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <title>Illidan Stormrage Puzzle</title>
+
+    <style>
+        h1{
+            text-align: center;
+        }
+        #flex-box {
+            display: flex;
+            justify-content: center;
+            width: 600px;
+            align-items: flex-start;
+            flex-wrap: wrap;
+            padding-left: 325px;
+            position: absolute;
+        }
+
+        img {
+            width: 180px;
+            height: auto;
+            object-fit: cover;
+            object-position: top;
+            margin: 5px;
+        }
+
+        
+
+        .shift-left{
+            position: relative;
+            left: 5px;
+            top: 15px;
+        }
+
+        .shift-right{
+            position: relative;
+            right: 15px;
+            bottom: 15px;
+        }
+
+    </style>
+</head>
+
+<body>
+    <h1>Illidan Stormrage Puzzle</h1>
+
+    <div id="flex-box">
+
+        <div class="img-container">
+            <img src="img/puzzle/row-1-column-1.jpg" alt="1,1" class="shift-left">
+        </div>
+
+        <div class="img-container">
+            <img src="img/puzzle/row-1-column-2.jpg" alt="1,2">
+        </div>
+
+        <div class="img-container">
+            <img src="img/puzzle/row-1-column-3.jpg" alt="1,3">
+        </div>
+
+        <div class="img-container">
+            <img src="img/puzzle/row-2-column-1.jpg" alt="2,1" class="shift-left">
+        </div>
+
+        <div class="img-container">
+            <img src="img/puzzle/row-2-column-2.jpg" alt="2,2">
+        </div>
+
+        <div class="img-container">
+            <img src="img/puzzle/row-2-column-3.jpg" alt="2,3">
+        </div>
+
+        <div class="img-container">
+            <img src="img/puzzle/row-3-column-1.jpg" alt="3,1" class="shift-left">
+        </div>
+
+        <div class="img-container">
+            <img src="img/puzzle/row-3-column-2.jpg" alt="3,2">
+        </div>
+
+        <div class="img-container">
+            <img src="img/puzzle/row-3-column-3.jpg" alt="3,3" class="shift-right">
+        </div>
+
+    </div>
+
+</body>
+
+</html>

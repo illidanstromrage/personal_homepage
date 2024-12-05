@@ -1,0 +1,93 @@
+
+@font-face{
+    font-family: neighbor;
+    src: url("fonts/Neighbor.ttf");
+}
+
+
+#header{
+    padding-top: 100px;
+    padding-bottom: 100px;
+    background-size: cover;
+    background-position:center;
+    object-fit: cover;
+}
+
+h1 {
+    text-align: center;
+    font: 600px;
+    color: white;
+    font-family: neighbor, fantasy;
+	font-size:4em;
+    font-weight: 100;
+}
+
+#navbar {
+    border-top: 1px solid #CCC;
+    border-bottom: 1px solid #CCC;
+    display: flex;
+    justify-content: center;
+    background-color: black;
+}
+
+#navbar a {
+    text-decoration: none;
+    color: white;
+    display: block;
+    width: 150px;
+    padding-top: 10px;
+    padding-bottom: 10px;
+    text-align: center;
+    border-bottom: 2px solid black;
+}
+
+#navbar a:hover {
+    border-bottom: 2px solid maroon;
+    color: #900;
+}
+
+#navbar ul {
+    list-style: none;
+    margin: 0;
+    padding: 0;
+}
+
+#navbar li {
+    background-color: black;
+    position: relative;
+}
+
+#navbar li:hover {
+    background-color: yellow;
+}
+
+#navbar li:hover>ul {
+    display: block;
+}
+
+#top-menu{
+    display: flex;
+    justify-content: center;
+    align-items: flex-start;
+}
+
+#top-menu ul{
+    position: absolute;
+    display: none;
+}
+
+html {
+    scroll-behavior: smooth;
+}
+
+#footer {
+    text-align: center;
+    background-color: gold;
+    background-size: cover;
+    background-position: center;
+}
+
+body {
+    margin: 0px;
+
+}

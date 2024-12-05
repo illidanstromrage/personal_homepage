@@ -1,0 +1,300 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+
+    <link rel="stylesheet" href="main.css">
+    <link href="https://fonts.googleapis.com/css2?family=Edu+AU+VIC+WA+NT+Guides:wght@400..700&family=Sixtyfour+Convergence&display=swap" rel="stylesheet">
+    <style>
+        #header {
+            background-image: url("img/gallery_header.jpg");
+        }
+
+        #wrapper {
+            display: flex;
+            background-color: pink;
+            justify-content: center;
+        }
+
+        h2 {
+            font-family: "Sixtyfour Convergence", cursive;
+            font-size: 3em;
+            text-align: center;
+        }
+
+        #main {
+            width: 800px;
+            margin-left: auto;
+            margin-right: auto;
+            padding: 15px;
+            background-color: white
+        }
+
+        #outer_box {
+            display: flex;
+            justify-content: flex-start;
+            flex-wrap: wrap;
+            padding: 10px;
+
+        }
+
+        #img_1 {
+            background-color: gray;
+            width: 300px;
+            height: 200px;
+            margin: auto;
+            flex-wrap: wrap;
+            margin-bottom: 15px;
+            border: 1px solid black;
+            overflow: hidden;
+            position: relative;
+        }
+
+       img {
+            width: 100%;
+            height: 100%;
+            object-fit: cover;
+            object-position: top;
+        }
+
+        .img_2-3 {
+            background-color: gray;
+            width: 150px;
+            height: 200px;
+            margin: auto;
+            flex-wrap: wrap;
+            margin-bottom: 15px;
+            border: 1px solid black;
+            overflow: hidden;
+            position: relative;
+        }
+
+        #inner_box {
+            display: flex;
+            justify-content: flex-start;
+            flex-wrap: wrap;
+            width: 400px;
+
+        }
+
+        .img_4-7 {
+            background-color: gray;
+            width: 190px;
+            height: 190px;
+            margin: auto;
+            margin-bottom: 5px;
+            flex-wrap: wrap;
+            border: 1px solid black;
+            overflow: hidden;
+            position: relative;
+        }
+
+        #img_8 {
+            background-color: gray;
+            width: 350px;
+            height: 350px;
+            margin: auto;
+            margin-bottom: 30px;
+            flex-wrap: wrap;
+            border: 1px solid black;
+            overflow: hidden;
+            position: relative;
+        }
+
+        #img_9 {
+            background-color: gray;
+            width: 500px;
+            height: 250px;
+            margin: auto;
+            margin-bottom: 5px;
+            flex-wrap: wrap;
+            border: 1px solid black;
+            overflow: hidden;
+            position: relative;
+        }
+
+       
+
+        #img_10 {
+            background-color: gray;
+            width: 300px;
+            height: 200px;
+            margin: auto;
+            margin-bottom: 5px;
+            flex-wrap: wrap;
+            border: 1px solid black;
+            overflow: hidden;
+            position: relative;
+        }
+
+        .overlay {
+            position: absolute;
+            top: 0px;
+            bottom: 0px;
+            background-color: rgba(0, 0, 0, 0.6);
+            left: 0px;
+            right: 0px;
+            color: white;
+            text-align: center;
+            padding-top: 100px;
+            visibility: hidden;
+        }
+
+        #img_1:hover .overlay {
+            visibility: visible;
+        }
+        
+        .img_2-3:hover .overlay{
+			visibility: visible;
+		}
+
+        .img_4-7:hover .overlay{
+			visibility: visible;
+		}
+        #img_8:hover .overlay{
+			visibility: visible;
+		}
+        #img_9:hover .overlay{
+			visibility: visible;
+		}
+        #img_10:hover .overlay{
+			visibility: visible;
+		}
+    </style>
+
+    <title>Interest Page</title>
+</head>
+
+<body>
+    <div id="header">
+        <h1>Gallery</h1>
+    </div>
+
+    <div id="navbar">
+        <ul id="top-menu">
+            
+                <li><a href="interest_page.html">Home</a>
+                    <ul class="sub-menu">
+                        <li><a href="interest_page.html#storyline-section">Stroyline</a></li>
+                        <li><a href="interest_page.html#review-section">Review</a></li>
+                        <li><a href="interest_page.html#character-section">Main Characters</a></li>
+                    </ul>
+                </li>
+                <li><a href="gallery.html">Gallery</a></li>
+
+            
+        </ul>
+
+
+    </div>
+
+
+
+    <div id="wrapper">
+        <div id="main">
+            <h2>Gallery</h2>
+
+            <div id="outer_box">
+
+                <div id="img_1">
+
+                    <img src="gallery-img/1.jpg" alt="">
+                    <div class="overlay">
+                        Ned Stark stood up for his daughter Arya
+                    </div>
+                </div>
+
+                <div class="img_2-3">
+
+                    <img src="gallery-img/2.jpg" alt="">
+                    <div class="overlay">
+                        Arya stood in the ruin of the Red Keep after the final war
+                    </div>
+
+                </div>
+
+                <div class="img_2-3">
+
+                    <img src="gallery-img/3.jpg" alt="">
+                    <div class="overlay">
+                        The empty Iron Throne
+                    </div>
+
+                </div>
+
+
+                <div id="inner_box">
+                    <div class="img_4-7">
+
+                        <img src="gallery-img/4.jpg" alt="">
+                        <div class="overlay">
+                           John and Daenerys on cliffs looked down to the battle field
+                        </div>
+
+                    </div>
+
+                    <div class="img_4-7">
+
+                        <img src="gallery-img/5.jpg" alt="">
+                        <div class="overlay">
+                            The "Spider"'s final scene before being excuted by his Queen Deanerys
+                        </div>
+
+                    </div>
+
+                    <div class="img_4-7">
+
+                        <img src="gallery-img/6.jpg" alt="">
+                        <div class="overlay">
+                            Sir James being questioned after went up north alone
+                        </div>
+
+                    </div>
+
+                    <div class="img_4-7">
+
+                        <img src="gallery-img/8.jpg" alt="">
+                        <div class="overlay">
+                            Arya and the Hound on their way to Kingslanding: their final journey
+                        </div>
+
+                    </div>
+
+                </div>
+
+                <div id="img_8">
+                    
+                    <img src="gallery-img/7.jpg" alt="">
+                    <div class="overlay">
+                        Arya and John's farewell meeting before she moved on to new journey and he went beyond the Wall leading the Wildlings
+                    </div>
+                    
+                </div>
+
+                <div id="img_9">
+                    
+                    <img src="gallery-img/9.jpg" alt="">
+                    <div class="overlay">
+                        Queen Daenerys examined her troops after nearly wipped out Kingslanding
+                    </div>
+                  
+                </div>
+
+                <div id="img_10">
+                    
+                    <img src="gallery-img/10.jpg" alt="">
+                    <div class="overlay">
+                        John's first time back to Winter Fall the death of his father, mother, and big brother
+                    </div>
+                    
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <div id="footer">
+        University of Southern California &copy; 2024
+    </div>
+</body>
+
+</html>

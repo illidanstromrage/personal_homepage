@@ -1,0 +1,188 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+
+    <title>Calendar</title>
+
+    <style>
+        #header {
+            text-align: center;
+            background-image: url(img/header.jpg);
+            background-size: cover;
+            background-position: center;
+            padding: 100px;
+
+        }
+
+        #main {
+            width: 1000px;
+            text-align: center;
+            margin-left: auto;
+            margin-right: auto;
+
+        }
+
+
+        table {
+            border-collapse: collapse;
+            text-align: center;
+            width: 1000px;
+            table-layout: fixed;
+        }
+
+        th {
+            border: 1px solid #ccc;
+            padding: 10px;
+            border-bottom: 3px solid grey;
+
+        }
+
+        td {
+            height: 100px;
+            border: 1px solid #ccc;
+            padding: 10px;
+            vertical-align: top;
+            text-align: right;
+        }
+
+        #birthday {
+            background-image: url(img/tommy_trojan.jpg);
+            background-size: cover;
+            background-position: center ;
+            position: relative;
+        }
+
+        #mid_autumn {
+            background-image: url(img/mid_autumn.jpg);
+            background-size: cover;
+            background-position: center;
+            position: relative;
+        }
+
+        #labor_day {
+            background-image: url(img/labor.jpg);
+            background-size: cover;
+            background-position: center;
+            position: relative;
+
+        }
+
+
+        .text{
+           position: absolute;
+           text-align: center;
+           top: 60%;
+           left: 20%;
+           color: red;
+           font-size: 20px;
+           background-color: rgba(0, 0, 0, 0.5);
+        }
+
+        .date {
+            vertical-align: top;
+            text-align: right;
+            color: red;
+           
+        }
+
+        .grayout{
+            color: gray;
+            
+        }
+    </style>
+
+</head>
+
+
+<body>
+
+    <div id="main">
+
+
+
+        <div id="header">
+            <h1>September 2024</h1>
+        </div>
+
+        <table>
+
+
+            <tr id="date">
+                <th>Sun</th>
+                <th>Mon</th>
+                <th>Tue</th>
+                <th>Wed</th>
+                <th>Thu</th>
+                <th>Fri</th>
+                <th>Sat</th>
+            </tr>
+
+            <tr class="number">
+                <td>1</td>
+                <td id="labor_day">
+                    <strong class="text">Labor Day</strong>
+                    <strong class="date"> 2 </strong>
+                </td>
+                <td>3</td>
+                <td>4</td>
+                <td>5</td>
+                <td>6</td>
+                <td id="birthday">
+                    <strong class="text">Birthday</strong>
+                    <strong class="date"> 7 </strong>
+
+                </td>
+
+            </tr>
+
+            <tr>
+                <td>8</td>
+                <td>9</td>
+                <td>10</td>
+                <td>11</td>
+                <td>12</td>
+                <td>13</td>
+                <td>14</td>
+            </tr>
+
+            <tr>
+                <td>15</td>
+                <td>16</td>
+                <td id="mid_autumn">
+                    <strong class="text">Mid-Autumn</strong>
+                    <strong class="date"> 17 </strong>
+                </td>
+                <td>18</td>
+                <td>19</td>
+                <td>20</td>
+                <td>21</td>
+            </tr>
+
+            <tr>
+                <td>22</td>
+                <td>23</td>
+                <td>24</td>
+                <td>25</td>
+                <td>26</td>
+                <td>27</td>
+                <td>28</td>
+            </tr>
+
+            <tr>
+                <td>29</td>
+                <td>30</td>
+                <td class="grayout">1</td>
+                <td class="grayout">2</td>
+                <td class="grayout">3</td>
+                <td class="grayout">4</td>
+                <td class="grayout">5</td>
+            </tr>
+
+
+        </table>
+
+    </div>
+</body>
+
+</html>

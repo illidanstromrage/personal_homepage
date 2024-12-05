@@ -1,0 +1,47 @@
+
+
+h1 {
+    text-align: center;
+    font: 600px;
+    color: white;
+}
+
+#navbar {
+    border-top: 1px solid #CCC;
+    border-bottom: 1px solid #CCC;
+    display: flex;
+    justify-content: center;
+    background-color: black;
+}
+
+#navbar a {
+    text-decoration: none;
+    color: white;
+    display: block;
+    width: 150px;
+    padding-top: 10px;
+    padding-bottom: 10px;
+    text-align: center;
+    border-bottom: 2px solid black;
+}
+
+#navbar a:hover {
+    border-bottom: 2px solid maroon;
+    color: #900;
+}
+
+html {
+    scroll-behavior: smooth;
+}
+
+#footer {
+    text-align: center;
+    background-color: gold;
+    background-size: cover;
+    background-position: center;
+}
+
+body {
+    margin: 0px;
+
+}

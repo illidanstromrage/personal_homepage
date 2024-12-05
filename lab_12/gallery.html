@@ -1,0 +1,168 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <title>Favorite Basketball Player</title>
+
+    <style>
+        h1 {
+            text-align: center;
+        }
+
+        #main {
+            width: 600px;
+            margin-left: auto;
+            margin-right: auto;
+            padding: 10px;
+        }
+
+        #gallery {
+            display: flex;
+            align-items: flex-start;
+            justify-content: center;
+            padding: 200px;
+        }
+
+        img {
+            width: 140px;
+            height: auto;
+            margin: 5px;
+            opacity: 0.7;
+            cursor: pointer;
+        }
+
+        /* img:hover {
+            opacity: 1;
+            border: 2px solid red;
+
+        } */
+
+
+
+        img+p {
+            text-align: center;
+            /* display: none; */
+            opacity: 0;
+        }
+
+        img:hover+p {
+            /* display: block; */
+            opacity: 1;
+
+        }
+    </style>
+
+</head>
+
+<body>
+
+    <h1>My Favorite Basketball Player</h1>
+
+    <main>
+
+        <div id="gallery">
+
+            <div class="main-img-container">
+                <img id="img-1" src="img/mav.jpg" alt="077">
+                <p>Luka Doncic</p>
+            </div>
+
+            <div class="main-img-container">
+                <img id="img-2" src="img/curry.jpg" alt="Curry">
+                <p>Stephen Curry</p>
+            </div>
+
+            <div class="main-img-container">
+                <img id="img-3" src="img/jokic.jpg" alt="Jokic">
+                <p>Nicola Jokic</p>
+            </div>
+
+            <div class="main-img-container">
+                <img id="img-4" src="img/lakers.jpg" alt="James">
+                <p>Lebron James</p>
+            </div>
+
+            <div class="main-img-container">
+                <img id="img-5" src="img/kobe.jpg" alt="Kobe">
+                <p>Kobe Bryant</p>
+            </div>
+
+        </div> <!-- #gallery -->
+
+
+        <script src="https://code.jquery.com/jquery-3.7.1.min.js"></script>
+
+        <script>
+            $('#img-1').click(function () {
+                $('#img-1').css('border', '2px solid red')
+                $('#img-1').css('opacity', '1')
+                $('#img-2').css('border', 'none')
+                $('#img-2').css('opacity', '0.7')
+                $('#img-3').css('border', 'none')
+                $('#img-3').css('opacity', '0.7')
+                $('#img-4').css('border', 'none')
+                $('#img-4').css('opacity', '0.7')
+                $('#img-5').css('border', 'none')
+                $('#img-5').css('opacity', '0.7')
+            })
+
+            $('#img-2').click(function () {
+                $('#img-2').css('border', '2px solid red')
+                $('#img-2').css('opacity', '1')
+                $('#img-1').css('border', 'none')
+                $('#img-1').css('opacity', '0.7')
+                $('#img-3').css('border', 'none')
+                $('#img-3').css('opacity', '0.7')
+                $('#img-4').css('border', 'none')
+                $('#img-4').css('opacity', '0.7')
+                $('#img-5').css('border', 'none')
+                $('#img-5').css('opacity', '0.7')
+            })
+
+            $('#img-3').click(function () {
+                $('#img-3').css('border', '2px solid red')
+                $('#img-3').css('opacity', '1')
+                $('#img-2').css('border', 'none')
+                $('#img-2').css('opacity', '0.7')
+                $('#img-1').css('border', 'none')
+                $('#img-1').css('opacity', '0.7')
+                $('#img-4').css('border', 'none')
+                $('#img-4').css('opacity', '0.7')
+                $('#img-5').css('border', 'none')
+                $('#img-5').css('opacity', '0.7')
+            })
+
+            $('#img-4').click(function () {
+                $('#img-4').css('border', '2px solid red')
+                $('#img-4').css('opacity', '1')
+                $('#img-2').css('border', 'none')
+                $('#img-2').css('opacity', '0.7')
+                $('#img-3').css('border', 'none')
+                $('#img-3').css('opacity', '0.7')
+                $('#img-1').css('border', 'none')
+                $('#img-1').css('opacity', '0.7')
+                $('#img-5').css('border', 'none')
+                $('#img-5').css('opacity', '0.7')
+            })
+
+            $('#img-5').click(function () {
+                $('#img-5').css('border', '2px solid red')
+                $('#img-5').css('opacity', '1')
+                $('#img-2').css('border', 'none')
+                $('#img-2').css('opacity', '0.7')
+                $('#img-3').css('border', 'none')
+                $('#img-3').css('opacity', '0.7')
+                $('#img-4').css('border', 'none')
+                $('#img-4').css('opacity', '0.7')
+                $('#img-1').css('border', 'none')
+                $('#img-1').css('opacity', '0.7')
+            })
+
+            
+        </script>
+
+    </main>
+
+</body>
+
+</html>
